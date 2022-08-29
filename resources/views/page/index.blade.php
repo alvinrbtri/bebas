@@ -62,21 +62,21 @@
                 @enderror
               </div> --}}
             <div class="form-group">
-                <label>Nama</label>
+                <label>Nama panjang</label>
                 <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}">
                 @error('nama')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="form-group">
-                <label>NIM</label>
+                <label>KTP</label>
                 <input type="text" name="nim" class="form-control @error('nim') is-invalid @enderror" value="{{ old('nim') }}">
                 @error('nim')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="form-group">
-                <label>Jurusan</label>
+                <label>Jurusan kampung rambutan</label>
                 <input type="text" class="form-control @error('jurusan') is-invalid @enderror" name="jurusan" value="{{ old('jurusan') }}">
                 @error('jurusan')
                     <div class="alert alert-danger">{{ $message }}</div>
