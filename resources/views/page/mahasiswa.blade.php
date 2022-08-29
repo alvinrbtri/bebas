@@ -59,6 +59,7 @@
                             <th scope="col">No</th>
                             <th scope="col">Gambar</th>
                             <th scope="col">Nama</th>
+                            <th scope="col">Nama Panggilan</th>
                             <th scope="col">NIM</th>
                             <th scope="col">Jurusan</th>
                             <th scope="col">Aksi</th>
@@ -71,6 +72,7 @@
                             <th>
                               <img src="{{ asset('storage/kategori-images/' . $mhs->gambar)}}" class="img-fluid">{{$mhs->gambar}}</th>
                             <td>{{$mhs->nama}}</td>
+                            <td>{{$mhs->nama_p}}</td>
                             <td>{{$mhs->nim}}</td>
                             <td>{{$mhs->jurusan}}</td>
                             <td>

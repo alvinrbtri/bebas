@@ -69,6 +69,13 @@
                 @enderror
             </div>
             <div class="form-group">
+                <label>Nama panggilan</label>
+                <input type="text" name="nama_p" class="form-control @error('nama_p') is-invalid @enderror" value="{{ old('nama_p') }}">
+                @error('nama_p')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="form-group">
                 <label>KTP</label>
                 <input type="text" name="nim" class="form-control @error('nim') is-invalid @enderror" value="{{ old('nim') }}">
                 @error('nim')

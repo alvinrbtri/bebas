@@ -17,6 +17,7 @@ class Pagecontroller extends Controller
 
         $this->validate( $request, [
             'nama'=> 'required',
+            'nama_p' => 'required',
             'nim' => 'required | max:9',
             'gambar' => 'required', 
             'jurusan' => 'required'
@@ -24,6 +25,7 @@ class Pagecontroller extends Controller
 
         Mahasiswa::create([
             'nama' => $request->input('nama'),
+            'nama_p' => $request->input('nama_p'),
             'nim' => $request->input('nim'),
             'gambar' => $request->input('gambar'),
             'jurusan' => $request->input('jurusan')
@@ -51,6 +53,7 @@ class Pagecontroller extends Controller
             Mahasiswa::where(['id'=> $id])->update([
                 'gambar' => 'image|mimes:png,jpeg,jpg',
                 'nama' => $mhsa['nama'],
+                'nama_p' => $mhsa['nama_p'],
                 'nim' => $mhsa['nim'],
                 'jurusan' => $mhsa['jurusan']
             ]);
