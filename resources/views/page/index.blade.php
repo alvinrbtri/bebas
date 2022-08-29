@@ -43,7 +43,7 @@
             @endif
             @csrf
             <div class="form-group">
-                <label for="gambar">Gambar</label>
+                <label for="gambar">Gambar Muka Blalala</label>
                 <img class="img-preview img-fluid">
                 <input type="file" name="gambar" id="gambar" class="form-control @error('gambar') is-invalid @enderror" value="{{ old('gambar') }}">
                 @error('gambar')
